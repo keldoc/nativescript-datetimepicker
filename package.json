@@ -95,10 +95,8 @@
     "demo.vue.ios": "npm run build && cd ../demo-vue && tns run ios --emulator",
     "demo.vue.reset": "cd ../demo-vue && npx rimraf -- hooks node_modules platforms package-lock.json",
     "ngc": "ngc -p tsconfig.json",
-    "pack": "bash ../publish/pack.sh",
     "plugin.prepare": "npm run build && cd ../demo && tns plugin remove nativescript-datetimepicker && tns plugin add ../src",
     "plugin.tscwatch": "npm run tsc -- -w",
-    "prepack": "npm i && npm run ngc",
     "tsc": "npm i && tsc",
     "tslint": "cd .. && tslint \"**/*.ts\" --config tslint.json --exclude \"**/node_modules/**\" --exclude \"**/platforms/**\""
   },
